@@ -132,16 +132,11 @@ if __name__ == '__main__':
     parser.add_argument('--save', default=False, type=bool)  # 是否要储存生成的图片
     parser.add_argument('--save_pre_path', default='./result', type=str)
 
-    # parser.add_argument('--path_indata', default='/home/wusonghe/dataset/DHF1K', type=str)
     parser.add_argument('--path_indata', default='/home/jinyingjie/dataset/DHF1K', type=str)
     parser.add_argument('--model', default='val', type=str)     # 选择要生成的预测图片
     parser.add_argument("--image_width", default=384, type=int)
     parser.add_argument("--image_height",  default=224, type=int)
     parser.add_argument("--temporal", default=32, type=int)
-
-    # 测试第一个
-    # parser.add_argument('--start_idx', default=1, type=int)  # 选择要预测区间
-    # parser.add_argument('--end_idx', default=2, type=int)
 
     parser.add_argument('--start_idx', default=-1, type=int)  # 选择要预测区间
     parser.add_argument('--end_idx', default=-1, type=int)
